@@ -35,7 +35,7 @@ class FuelCalculatorForm extends FormBase {
       '#title' => $this->t('Distance travelled (km)'),
       '#required' => TRUE,
       '#default_value' => $default_distance,
-      '#color' =>'red'
+      '#step' => 'any',
     ];
   
     $form['fuel_consumption'] = [
