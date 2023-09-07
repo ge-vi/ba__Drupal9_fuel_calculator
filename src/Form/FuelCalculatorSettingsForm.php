@@ -22,18 +22,21 @@ class FuelCalculatorSettingsForm extends ConfigFormBase {
       '#type' => 'number',
       '#title' => $this->t('Default Distance (km)'),
       '#default_value' => $config->get('default_distance'),
+      '#step' => 'any',
     ];
 
     $form['default_consumption'] = [
       '#type' => 'number',
       '#title' => $this->t('Default Consumption (L/100km)'),
       '#default_value' => $config->get('default_consumption'),
+      '#step' => 'any',
     ];
 
     $form['default_price'] = [
       '#type' => 'number',
       '#title' => $this->t('Default Price per Liter'),
       '#default_value' => $config->get('default_price'),
+      '#step' => 'any',
     ];
 
     return parent::buildForm($form, $form_state);
