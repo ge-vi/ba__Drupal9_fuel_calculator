@@ -1,0 +1,3 @@
+services:
+  fuel_calculator.rest.fuel_calculator_resource:
+    class: Drupal\fuel_calculator\Plugin\rest\resource\FuelCalculatorResource

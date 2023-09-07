@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function fuel_calculator_menu() {
+  $items = [];
+
+  $items['admin/config/custom/fuel_calculator'] = [
+    'title' => 'Fuel Calculator Settings',
+    'description' => 'Configure Fuel Calculator settings.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => ['\Drupal\fuel_calculator\Form\FuelCalculatorConfigForm'],
+    'access arguments' => ['administer site configuration'],
+    'type' => MENU_NORMAL_ITEM,
+  ];
+
+  return $items;
+}

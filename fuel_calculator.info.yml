@@ -1,0 +1,6 @@
+name: 'Fuel Calculator'
+type: module
+description: 'Provides a Fuel Calculator.'
+core_version_requirement: ^8 || ^9
+package: Custom
+version: 1.0

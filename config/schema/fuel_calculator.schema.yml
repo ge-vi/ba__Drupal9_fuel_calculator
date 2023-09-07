@@ -1,0 +1,14 @@
+fuel_calculator.settings:
+  type: config_object
+  label: 'Fuel Calculator settings'
+  mapping:
+    default_distance:
+      type: float
+      label: 'Default Distance (km)'
+    default_consumption:
+      type: float
+      label: 'Default Consumption (L/100km)'
+    default_price:
+      type: float
+      label: 'Default Price per Liter'
+  # Other configuration settings, if any.
